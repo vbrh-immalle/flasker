@@ -1,9 +1,22 @@
-# Installatie
+# Installatie zonder pipenv
 
-Dit kan je normaal gezien doen.
-`python` zal dankzij `pipenv` (en de `Pipfile` in deze repository) ook automatisch naar Python 3 verwijzen. Het is niet nodig om `python3` te gebruiken.
+Opgelet: Flask zal geïnstalleerd worden in de ganse Python-installatie!
 
 ```
+pip install flask
+git clone https://github.com/vbrh-immalle/flasker
+cd flasker
+python main.py
+```
+
+# Installatie met pipenv
+
+Een `Pipfile` (of gelijkaardig `requirements.txt`) bevat een lijst van modules die dit project nodig heeft. Op deze manier kan je benodigde modules (zoals in dit geval `flask`) enkel in een "virtuele" Python-omgeving installeren.
+
+`pipenv` is een iets makkelijker systeem om met "virtuele" Python-omgeving te werken dan het veelgebruikte `virtualenv`.
+
+```
+pip install pipenv
 git clone https://github.com/vbrh-immalle/flasker
 cd flasker
 pipenv install
